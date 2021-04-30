@@ -5,7 +5,6 @@ import WeatherNone from './WeatherNone';
 interface weathersList {
   clearSubmit: () => void;
   weathers: {
-    length: number;
     id: number;
     data: {
       name: string;
@@ -19,7 +18,7 @@ interface weathersList {
       };
       time: string;
     }; //{}[] >> [{1,"sdsad"}, {...}]; ,  string[] >> ["cx", "sdasd"]
-  };
+  }[];
 }
 
 const WeatherList: React.FC<weathersList> = ({ weathers, clearSubmit }) => {
